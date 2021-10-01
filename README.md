@@ -16,30 +16,13 @@ To reference the code, please cite this publication:
     }
   ```
 
-
-
-#### TODO:
-
-- Directory listed below has not been built in the repo.
-    ```
-    ./highD-dataset-v1.0/...
-    ./pickle_data/
-
-    new_neighbor_track_pred/data/
-    new_neighbor_track_pred/model/
-
-    new_neighbor/new_data/
-    new_neighbor/model/
-    new_neighbor/temp/right_pic
-    ```
-
+### Datasets
+- For lane-changing prediction task, we choose the open-source High-way Drone (HighD) Dataset.
+- For trajectory prediction task, we choose NGSIM I-80 and US-101 Dataset.
 - Datasets(NGSIM us-101, i-80 and HighD) are not included in the repo, please download by yourself from the official website.
 
-- Some data pre-process pipline are not clear. (Run pre-process code in what order?)
 
 ### Quick Start
-
-
 
 1. Install/Update python dependency library
 
@@ -53,9 +36,17 @@ To reference the code, please cite this publication:
     python buildfolder.py
     ```
 
-3. Get the data
+### Task1: Lane-changing classification
+1. Get the data
+    - HighD: [https://www.highd-dataset.com/](https://www.highd-dataset.com/)
 
-    - [Data source](https://data.transportation.gov/Automobiles/Next-Generation-Simulation-NGSIM-Vehicle-Trajector/8ect-6jqj)
+2. Run all cells in `highD_data_process.ipynb`
+
+### Task2: Trajectory prediction  
+
+1. Get the data
+
+    - NGSIM: [https://data.transportation.gov/Automobiles/Next-Generation-Simulation-NGSIM-Vehicle-Trajector/8ect-6jqj](https://data.transportation.gov/Automobiles/Next-Generation-Simulation-NGSIM-Vehicle-Trajector/8ect-6jqj)
 
     - Follow this [introduction](https://github.com/nachiket92/conv-social-pooling) to pre-process the data and get following files:
         - TestSet.mat
@@ -64,20 +55,8 @@ To reference the code, please cite this publication:
 
     - Put these 3 files into `data/` folder.
 
-4. Format the data to fit GSAN model
+2. Format the data to fit GSAN model
 
     ```
     python datapreprocessing.py
-    ```
-
-5. Train & validate
-
-    ```
-    python train.py
-    ```
-
-6. Test
-
-    ```
-    python test.py
     ```
