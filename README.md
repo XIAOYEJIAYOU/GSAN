@@ -1,10 +1,24 @@
-## Spatio-Temporal Interaction Representation (STIR) 
+## GSAN
 
 ### Introduction
 
-Code for paper _**GSAN: Graph Self-Attention Network for Learning Spatial-Temporal Interaction Representation in Autonomous Driving**_. Previous code for _**GSAN: Graph Self-Attention Network for Interaction Measurement in Autonomous Driving**_ is moved to `gsan` branch for backup.
+Code for paper _**Graph Self-Attention Network for Learning Spatial-Temporal Interaction Representation in Autonomous Driving**_, which was published on IEEE Internet of Things Journal.
 
-#### TODO: 
+To reference the code, please cite this publication:
+
+  ```
+    @article{ye2021gsan,
+      title={GSAN: Graph Self-Attention Network for Learning Spatial-Temporal Interaction Representation in Autonomous Driving},
+      author={Ye, Luyao and Wang, Zezhong and Chen, Xinhong and Wang, Jianping and Wu, Kui and Lu, Kejie},
+      journal={IEEE Internet of Things Journal},
+      year={2021},
+      publisher={IEEE}
+    }
+  ```
+
+
+
+#### TODO:
 
 - Directory listed below has not been built in the repo.
     ```
@@ -18,8 +32,8 @@ Code for paper _**GSAN: Graph Self-Attention Network for Learning Spatial-Tempor
     new_neighbor/model/
     new_neighbor/temp/right_pic
     ```
-    
-- Dataset(e.g. high-D) is not included in the repo.
+
+- Datasets(NGSIM us-101, i-80 and HighD) are not included in the repo, please download by yourself from the official website.
 
 - Some data pre-process pipline are not clear. (Run pre-process code in what order?)
 
@@ -47,9 +61,9 @@ Code for paper _**GSAN: Graph Self-Attention Network for Learning Spatial-Tempor
         - TestSet.mat
         - TrainSet.mat
         - ValSet.mat
-    
+
     - Put these 3 files into `data/` folder.
-    
+
 4. Format the data to fit GSAN model
 
     ```
@@ -67,4 +81,3 @@ Code for paper _**GSAN: Graph Self-Attention Network for Learning Spatial-Tempor
     ```
     python test.py
     ```
-
