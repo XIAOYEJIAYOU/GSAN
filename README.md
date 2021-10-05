@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Code for paper _**Graph Self-Attention Network for Learning Spatial-Temporal Interaction Representation in Autonomous Driving**_, which was published on IEEE Internet of Things Journal.
+Code for paper _**GSAN: Graph Self-Attention Network for Learning Spatial-Temporal Interaction Representation in Autonomous Driving**_, which was published on IEEE Internet of Things Journal. And the link is [https://ieeexplore.ieee.org/document/9474961](https://ieeexplore.ieee.org/document/9474961).
 
 To reference the code, please cite this publication:
 
